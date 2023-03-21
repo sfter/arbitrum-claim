@@ -269,7 +269,7 @@ func Transfer(arbitrumClient *types2.ArbitrumClient, config *types2.Config, hexk
 	}
 
 	// Check balance
-	balance, err := arbitrumClient.ArbitrumContractProxy.BalanceOf(nil, receiveAddress)
+	balance, err := arbitrumClient.ArbitrumContractProxy.BalanceOf(nil, fromAddress)
 	if err != nil {
 		return err
 	}
